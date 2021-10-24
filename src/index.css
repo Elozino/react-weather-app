@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.app {
+  background-image: url("./assets/cloud.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.4 ease-out;
+
+}
+
+.app.warm {
+  background-image: url(./assets/sun-image.png);
+}
+
+main{
+  height: calc(100vh - 40px);
+  width: 100%;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+}
+
+.search-box{
+  width: 100%;
+  text-align: center;
+  margin: 0 0 75px;
+}
+
+.search-bar{
+  width: 70%;
+  padding: 15px;
+
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0px 4px rgba(200, 255, 255, 0.2);
+}
+
+.location-box, .weather-box{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  color: rgba(231, 204, 204, 0.7);
+  text-shadow: 3px 1px rgba(114, 114, 136, 0.5);
+  font-variant: small-caps;
+}
+.location-box .date{
+  font-style: italic;
+}
+
+.location-box > *, .weather-box > *{
+  margin: 20px 0;
+}
+
+.temp{
+  padding: 10px 30px;
+  margin: auto;
+  max-width: 200px;
+
+  background-color: rgba(200, 255, 255, 0.2);
+  color: #fff;
+  
+  border-radius: 0 0 16px 16px;
+  font-size: 50px;
+  text-shadow: none;
+}
+
+.weather{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+footer{
+  text-align: center;
+  color: rgba(212, 212, 221, 1);
+  padding: 10px 0;
+  height: 40px;
+}
